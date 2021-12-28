@@ -1,0 +1,16 @@
+
+@mixin flexbox() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  }
+  
+@mixin transformNew($rotate: 0, $translate: translate(0, 0)) {
+    -moz-transform: rotate(#{$rotate}deg) $translate;
+    -o-transform: rotate($rotate) $translate;
+    -ms-transform: rotate(#{$rotate}deg) $translate;
+    -webkit-transform: rotate(#{$rotate}deg) $translate;
+    transform: rotate(#{$rotate}deg) $translate;
+}
